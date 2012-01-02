@@ -8,3 +8,4 @@ already_sent_events
 pkg
 .redcar
 .sass-cache
+content/start_page.haml
