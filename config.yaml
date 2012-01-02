@@ -55,7 +55,7 @@ data_sources:
             name: "Deutsch"
         # objects should be not localized
         exclude:
-          item: ['/css*', '/js*', '/img*', '/scss*', '/stylesheets*', '/sass*', '/home*', '/txt*', '/sitemap*']
+          item: ['/css*', '/js*', '/img*', '/scss*', '/stylesheets*', '/sass*', '/start_page*', '/txt*', '/sitemap*']
           layout: ['*']
 
 # Deployment settings

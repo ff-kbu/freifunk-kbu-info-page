@@ -11,10 +11,18 @@ include Nanoc3::Helpers::LinkTo
 include Nanoc3::Helpers::Rendering
 include Nanoc3::Helpers::XMLSitemap
 
-
 def copy_index
   index = Pathname.pwd + Pathname.new("content/index.haml")
   FileUtils.cp(index, Pathname.pwd + Pathname.new("content/start_page.haml"))
+end
+
+def create_index
+  File.open(Pathname.pwd + "content/start_page.haml", "w") do |f|
+    f.puts "-# automatically generated copy of index.haml"
+    File.open(Pathname.pwd + 'content/index.haml').each_line do |line|
+      f << line
+    end
+  end
 end
 
 def load_translations
@@ -41,4 +49,9 @@ end
 def t(key)
   load_translations unless @translations
   key.split(/\./).inject(@translations[@item[:locale]]) { |result, subkey| result = result[subkey] }
+end
+
+begin
+  # TODO: function defined in lib/default.rb
+  create_index
 end

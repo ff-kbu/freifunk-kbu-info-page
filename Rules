@@ -11,10 +11,6 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-# TODO: function defined in lib/default.rb
-copy_index
-
-
 compile '/sass/_*/' do
   # Don't waste time compiling partials that will never be output
   nil
