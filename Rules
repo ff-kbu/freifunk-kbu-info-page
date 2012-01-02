@@ -26,8 +26,6 @@ compile '/txt/*/' do
   nil
 end
 
-
-
 compile '/sass/*/' do
   #filter :sass, Compass.sass_engine_options
   filter :sass, { :syntax => :scss }
@@ -103,5 +101,5 @@ end
 # filter based on file extension because layouts are matched based on
 # identifier and the identifier does not include the extension.  Could
 # do it based on folders but that is a little lame.
-layout 'default', :haml, :attr_wrapper => '"'
+layout 'default', :haml, {:attr_wrapper => '"', :ugly => true }
 layout '*', :haml, {:ugly => true}
