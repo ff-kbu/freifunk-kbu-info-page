@@ -11,6 +11,10 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+# TODO: function defined in lib/default.rb
+copy_index
+
+
 compile '/sass/_*/' do
   # Don't waste time compiling partials that will never be output
   nil
@@ -59,7 +63,7 @@ compile '*' do
   end
 end
 
-route '/home/' do
+route '/start_page/' do
   '/index.html'
   # (routing code here)
 end

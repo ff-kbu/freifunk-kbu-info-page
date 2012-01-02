@@ -4,11 +4,18 @@
 require 'nanoc3/data_sources/filesystem_i18n'
 require 'psych'
 require 'redcloth'
+require 'pathname'
+require 'fileutils'
 
 include Nanoc3::Helpers::LinkTo
 include Nanoc3::Helpers::Rendering
 include Nanoc3::Helpers::XMLSitemap
 
+
+def copy_index
+  index = Pathname.pwd + Pathname.new("content/index.haml")
+  FileUtils.cp(index, Pathname.pwd + Pathname.new("content/start_page.haml"))
+end
 
 def load_translations
   @translations = {}
