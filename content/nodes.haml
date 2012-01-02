@@ -1,37 +1,39 @@
 %h2= t('nodes.header')
 
-%h3= t('nodes.description.headline')
+%ol
+  %li
+    %h3= t('nodes.description.headline')
 
-.description
-  = textilize(t('nodes.description.text'))
+    .description
+      = textilize(t('nodes.description.text'))
+  %li
+    %h3.map= t('nodes.map.headline')
 
-%h3.map= t('nodes.map.headline')
+    #mapdiv{:style => "width:800; height:600"}
+    %script{:src => "http://www.openlayers.org/api/OpenLayers.js"}
+    :javascript
+      map = new OpenLayers.Map("mapdiv", {
+        controls: [
+          new OpenLayers.Control.MouseDefaults(),
+          new OpenLayers.Control.LayerSwitcher(),
+          new OpenLayers.Control.PanZoomBar()],
+      });
 
-#mapdiv{:style => "width:800; height:600"}
-%script{:src => "http://www.openlayers.org/api/OpenLayers.js"}
-:javascript
-  map = new OpenLayers.Map("mapdiv", {
-    controls: [
-      new OpenLayers.Control.MouseDefaults(),
-      new OpenLayers.Control.LayerSwitcher(),
-      new OpenLayers.Control.PanZoomBar()],
-  });
+      map.addLayer(new OpenLayers.Layer.OSM());
 
-  map.addLayer(new OpenLayers.Layer.OSM());
-
-  var pois = new OpenLayers.Layer.Text( "Access points",
-                    { location:"http://info.kbu.freifunk.net/txt/nodes.txt",
-                      projection: map.displayProjection
-                    });
-  map.addLayer(pois);
+      var pois = new OpenLayers.Layer.Text( "Access points",
+                        { location:"http://info.kbu.freifunk.net/txt/nodes.txt",
+                          projection: map.displayProjection
+                        });
+      map.addLayer(pois);
 
 
 
-  //Set start centrepoint and zoom
-  var lonLat = new OpenLayers.LonLat( 6.968, 50.82 )
-  .transform(
-    new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-      map.getProjectionObject() // to Spherical Mercator Projection
-    );
-  var zoom=11;
-  map.setCenter (lonLat, zoom);
+      //Set start centrepoint and zoom
+      var lonLat = new OpenLayers.LonLat( 6.968, 50.82 )
+      .transform(
+        new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+          map.getProjectionObject() // to Spherical Mercator Projection
+        );
+      var zoom=11;
+      map.setCenter (lonLat, zoom);
