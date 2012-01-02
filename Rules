@@ -1,0 +1,107 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+# A few helpful tips about the Rules file:
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+compile '/sass/_*/' do
+  # Don't waste time compiling partials that will never be output
+  nil
+end
+
+compile '/img/*/' do
+  # Don't waste time compiling partials that will never be output
+  nil
+end
+
+compile '/txt/*/' do
+  # Don't waste time compiling partials that will never be output
+  nil
+end
+
+
+
+compile '/sass/*/' do
+  #filter :sass, Compass.sass_engine_options
+  filter :sass, { :syntax => :scss }
+  filter :relativize_paths, :type => :css
+end
+
+compile 'sitemap' do
+  filter :erb
+end
+
+compile '*' do
+  unless item.binary?
+    case item[:extension]
+    when 'css'
+      filter :relativize_paths, :type => :css
+    when 'md'
+      filter :kramdown
+      layout 'default'
+      filter :relativize_paths, :type => :html
+    when 'haml'
+      filter :haml, { :ugly => true }
+      layout 'default'
+      filter :relativize_paths, :type => :html
+    when 'js'
+      nil
+    else
+      nil
+    end
+  end
+end
+
+route '/home/' do
+  '/index.html'
+  # (routing code here)
+end
+
+route '/sass/_*/' do
+  # Don't output partials
+  nil
+end
+
+route '/sass/*/' do
+  # /sass/foo/ -> /css/foo.css
+  item.identifier.chop.sub('sass', 'css') + '.css'
+end
+
+route '/img/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/txt/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route 'sitemap' do
+  item.identifier.chop + '.xml'
+end
+
+route '*' do
+  # Maybe negate the logic here?  Only do the chopping to formats we know converted to HTML?
+  if item.binary? or item[:extension] == 'css' or item[:extension] == 'js' or item[:extension] == 'xml'
+    # /foo/ -> /foo.ext 
+    item.identifier.chop + '.' + item[:extension] 
+  else
+    # /foo/ -> /foo/home.haml.html
+     item.identifier + 'index.html'
+  end
+end
+
+
+
+# I don't believe there's a way to choose the appropriate layout
+# filter based on file extension because layouts are matched based on
+# identifier and the identifier does not include the extension.  Could
+# do it based on folders but that is a little lame.
+layout 'default', :haml, :attr_wrapper => '"'
+layout '*', :haml, {:ugly => true}

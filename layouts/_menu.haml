@@ -1,0 +1,9 @@
+%ul.main
+  %li
+    %a{:href => "/#{@item[:locale]}/"}= t('welcome_page.menu_name')
+  %li
+    %a{:href => "/#{@item[:locale]}/participation/"}= t('participation.menu_name')
+  %li
+    %a{:href => "/#{@item[:locale]}/nodes/"}= t('nodes.menu_name')
+  %li
+    %a{:href => "/#{@item[:locale]}/contact/"}= t('contact.menu_name')

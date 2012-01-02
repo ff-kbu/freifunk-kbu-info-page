@@ -1,0 +1,47 @@
+---
+meta:
+  name: English
+
+site:
+  name: Freifunk Cologne, Bonn and Rurality
+
+welcome_page:
+  header: Home
+  menu_name: Home
+
+
+participation:
+  header: Participation
+  menu_name: Participate
+
+
+nodes:
+  header: Nodes
+  menu_name: Nodes
+
+  description:
+    headline: Description
+    text: Description
+
+  map:
+    headline: Map
+    text:
+
+
+contact:
+  header: Contact
+  menu_name: Contact
+
+  meetings:
+    headline: Meetings
+    text:
+
+  mailingliste:
+    headline: Mailingliste
+    text:
+
+  mail:
+    headline:
+    text:
+
+

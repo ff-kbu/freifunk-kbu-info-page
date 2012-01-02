@@ -1,0 +1,10 @@
+output/*
+tmp/*
+.idea
+*.gem
+.bundle
+Gemfile.lock
+already_sent_events
+pkg
+.redcar
+.sass-cache

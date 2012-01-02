@@ -1,0 +1,44 @@
+---
+meta:
+  name: Deutsch
+
+site:
+  name: Freifunk Köln, Bonn und Umgebung
+
+welcome_page:
+  header: Startseite
+  menu_name: Startseite
+
+
+participation:
+  header: Mitmachen
+  menu_name: Mitmachen
+
+
+nodes:
+  header: Knoten
+  menu_name: Knoten
+
+  description:
+    headline: Beschreibung
+    text: Das KBU-Freifunknetz verfügt über eine Vielzahl aktiver Wlan Knoten. Sämtliche Knoten die auf der unteren Karte angezeigt werden sind aktiv und können genutzt werden. An allen Zugangsknoten kannst du innerhalb des Freifunknetzes mit anderen Teilnehmern kommunizieren, aber auch der Zugang in das Internet ist an allen Zugangsknoten möglich.
+
+  map:
+    headline: Übersichtskarte
+    text:
+
+contact:
+  header: Kontakt
+  menu_name: Kontakt
+
+  meetings:
+    headline: Treffen
+    text: In regelmäßigen Abständen Treffen wir uns im "Netzladen":http://netzladen.org Bonn oder im "C4":http://koeln.ccc.de. Aktuelle Termine findest du bei uns im "Wiki":https://kbu.freifunk.net/index.php/Treffen.
+
+  mailingliste:
+    headline: Mailigliste
+    text: Für die Projekt interne Kommunikation als auch für die Kommunikation von Neuigkeiten haben wir eine Mailingliste die du unter der Adresse @freifunk-bonn[at]lists.bonn.freifunk.net@ abbonieren und darauf schreiben kannst.
+
+  mail:
+    headline: E-Mail
+    text: Wenn du direkt per E-Mail mit uns kommunizieren möchtest, dann nutze bitte die E-Mail Adresse @info[at]kbu.freifunk.net@ dafür.

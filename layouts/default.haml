@@ -1,0 +1,47 @@
+!!! xml
+%html{:xmlns => 'http://www.w3.org/1999/xhtml', :lang => :en, 'xml:lang' => :en}
+  %head
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+
+    %title= t('site.name')
+
+    %link{:href => '/img/favicon.ico', :rel => 'shortcut icon'}
+    -# Stylesheets
+    %link{:rel => "stylesheet", :href => "/css/application.css", :type => "text/css", :media => "screen"}
+    - if @item[:stylesheets]
+      - @item[:stylesheets].each do |stylesheet|
+        %link{:rel => "stylesheet", :href => stylesheet, :type => "text/css", :media => "screen"}
+
+
+
+    -# Javascripts
+    %script{:src => "/js/site.js", :type => "text/javascript"}
+    - if @item[:scripts]
+      - @item[:scripts].each do |script|
+        %script{:src => script, :type => "text/javascript"}
+
+  %body
+    #container
+
+      #language
+        %ul
+          %li
+            %a{:href=> normalize_identifier(@item, :de) } Deutsch
+          %li
+            %a{:href=>normalize_identifier(@item, :en) } English
+
+
+      #header
+        %h1= t('site.name')
+
+        #logo
+          %img{:src => '/img/kbu_logo.png', :alt => 'Freifunk Köln, Bonn und Umgebung'}
+
+      #menu
+        = render '_menu'
+
+      #content
+        = yield
+
+      #footer
+
