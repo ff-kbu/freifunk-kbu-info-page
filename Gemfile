@@ -6,4 +6,4 @@ gem 'sass'
 gem 'adsf'
 gem 'kramdown'
 gem 'sass'
-gem 'redcloth'
+gem "RedCloth"
