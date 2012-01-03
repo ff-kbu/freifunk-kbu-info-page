@@ -1,6 +1,6 @@
 = Freifunk KBU Info Page
 
-This is the source code for the {Freifunk Köln, Bonn und Umgebung}[http://kbu.freifunk.net] information {page}[http://info.kbu.freifunk.net]. The page containts basic inforamtion to our Freifunk project and is stored on access points. It based on the static web site generator {nanoc}[http://nanoc.stoneship.org/].
+This is the source code for the {Freifunk Köln, Bonn und Umgebung}[http://kbu.freifunk.net] information {page}[http://info.kbu.freifunk.net]. The page contains basic information to our Freifunk project and is stored on access points. It based on the static web site generator {nanoc}[http://nanoc.stoneship.org/].
 
 
 == Build website
@@ -38,4 +38,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Ripo.  If not, see <http://www.gnu.org/licenses/>.
+along with FreifunkKBUInfoPage. If not, see <http://www.gnu.org/licenses/>.
