@@ -58,6 +58,7 @@ compile '*' do
 end
 
 route '/start_page/' do
+  item[:locale] = :de
   '/index.html'
   # (routing code here)
 end
