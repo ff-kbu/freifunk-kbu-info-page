@@ -1,0 +1,41 @@
+= Freifunk KBU Info Page
+
+This is the source code for the {Freifunk Köln, Bonn und Umgebung}[http://kbu.freifunk.net] information {page}[http://info.kbu.freifunk.net]. The page containts basic inforamtion to our Freifunk project and is stored on access points. It based on the static web site generator {nanoc}[http://nanoc.stoneship.org/].
+
+
+== Build website
+
+0. You need to have Ruby and the Bundler gem installed.
+
+1. Clone repository
+
+     clone git@github.com:meise/freifunk-kbu-info-page.git
+
+2. Bundle inside directory to install all necessary gems.
+
+     cd freifunk-kbu-info-page
+     bundle
+
+3. Build static page. Static files are located in output directory after compilation.
+
+     nanoc compile
+
+
+== License
+
+Copyright Daniel Meißner <dm@3st.be>, 2012
+
+This file is part of FreifunkKBUInfoPage.
+
+FreifunkKBUInfoPage is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+FreifunkKBUInfoPage is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Ripo.  If not, see <http://www.gnu.org/licenses/>.
