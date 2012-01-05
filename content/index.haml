@@ -1,1 +1,8 @@
 %h2= t('welcome_page.header')
+
+%ol
+  %li.welcome
+    %h3= t('welcome_page.welcome.headline')
+
+    .description
+      = textilize(t('welcome_page.welcome.text'))

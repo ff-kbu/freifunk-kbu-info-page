@@ -5,14 +5,51 @@ meta:
 site:
   name: Freifunk Köln, Bonn und Umgebung
 
+
 welcome_page:
   header: Startseite
   menu_name: Startseite
+
+  welcome:
+    headline: Willkommen im Freifunk-KBU-Netz!
+    text: |
+      Unser Freifunk-Netz ermöglicht Kommunikation untereinander - unabhängig von kommerziellen Interessen.
+
+      Freifunk  KBU möchte alle Freifunkinteressierten aus Köln, Bonn und der angrenzenden Umgebung zusammenbringen. Wir sind also ein regionaler  Ableger der "Freifunk-Community":http://freifunk.net/.
+
+      Freifunk ist mehr als ein billiges Netz für Alle. Auch gesellschaftliche und politische Aspekte spielen eine Rolle. Die Freifunk-Community ist Teil einer globalen Bewegung für freie Infrastrukturen.
+
+      Unsere Vision ist die Demokratisierung der Kommunikationsmedien durch freie Netzwerke. Die praktische Umsetzung dieser Idee nehmen Freifunk-Communities in der ganzen Welt in Angriff. Eine ausführlichere Beschreibung der allgemeinen Ziele gibt es "hier":http://start.freifunk.net/content/was-ist-freifunk.
 
 
 participation:
   header: Mitmachen
   menu_name: Mitmachen
+
+  use:
+    headline: Nutze Freifunk
+    text: |
+      Jedes Wireless Lan Gerät kann Teil des Freifunk-Netzes werden.
+
+      *Verbinde Dich!*
+
+      Einige Dienste sind zur Zeit in Planung, die nur über das Mesh-Netzwerk selbst  verfügbar sein werden. Weitere Infos findest du auf unserer "Homepage":http://kbu.freifunk.net.
+
+      Zum anderen kannst du das Mesh-Netzwerk dazu nutzen, kostenlos ins Internet zu kommen. Hierbei gilt:
+        * *Keine Garantie* - Wir sind kein kommerzieller Internet-Anbieter
+        * Sei nett zu deinen Nachbarn - Tue nichts was deinem Nachbarn schaden könnte
+        * Schütze Dich -  Es ist technisch möglich in Funknetzen mitzuhören.
+          Informiere Dich: "http://kbu.freifunk.net":http://kbu.freifunk.net.
+
+  extention:
+    headline: Erweitere das Netz
+    text: |
+      Um das Netzwerk selbst zu erweitern benötigst du nur einen geeigneten "Router":https://kbu.freifunk.net/index.php/Hardware mit unserer "Firmware":https://kbu.freifunk.net/index.php/Firmware. Bei der Installation helfen wir Dir gerne weiter.
+
+  community:
+    headline: Werde Teil unserer Community
+    text: |
+      Wir treffen uns "regelmäßig":https://kbu.freifunk.net/index.php/Treffen - komm einfach vorbei oder schreibe eine uns eine "E-Mail":/de/contact/.
 
 
 nodes:
@@ -21,11 +58,13 @@ nodes:
 
   description:
     headline: Beschreibung
-    text: Das KBU-Freifunknetz verfügt über eine Vielzahl aktiver Wlan Knoten. Sämtliche Knoten die auf der unteren Karte angezeigt werden sind aktiv und können genutzt werden. An allen Zugangsknoten kannst du innerhalb des Freifunknetzes mit anderen Teilnehmern kommunizieren, aber auch der Zugang in das Internet ist an allen Zugangsknoten möglich.
+    text: |
+      Das KBU-Freifunknetz verfügt über eine Vielzahl aktiver Wlan Knoten. Die auf der unten stehenden Karte angzeigt werden, sind verfügbar und können genutzt werden. An allen Zugangsknoten kannst du innerhalb des Freifunknetzes mit anderen Teilnehmern kommunizieren, aber auch der Zugang in das Internet ist an allen Zugangsknoten möglich.
 
   map:
     headline: Übersichtskarte
     text:
+
 
 contact:
   header: Kontakt
@@ -33,12 +72,15 @@ contact:
 
   meetings:
     headline: Treffen
-    text: In regelmäßigen Abständen Treffen wir uns im "Netzladen":http://netzladen.org Bonn oder im "C4":http://koeln.ccc.de. Aktuelle Termine findest du bei uns im "Wiki":https://kbu.freifunk.net/index.php/Treffen.
+    text: |
+     In regelmäßigen Abständen Treffen wir uns im "Netzladen":http://netzladen.org Bonn oder im "C4":http://koeln.ccc.de. Aktuelle Termine findest du bei uns im "Wiki":https://kbu.freifunk.net/index.php/Treffen.
 
   mailingliste:
-    headline: Mailigliste
-    text: Für die Projekt interne Kommunikation als auch für die Kommunikation von Neuigkeiten haben wir eine Mailingliste die du unter der Adresse @freifunk-bonn[at]lists.bonn.freifunk.net@ abbonieren und darauf schreiben kannst.
+    headline: Mailingliste
+    text: |
+      Für die Projekt interne Kommunikation als auch für die Kommunikation von Neuigkeiten haben wir eine Mailingliste die du unter der Adresse @freifunk-bonn[at]lists.bonn.freifunk.net@ abbonieren und darauf schreiben kannst.
 
   mail:
     headline: E-Mail
-    text: Wenn du direkt per E-Mail mit uns kommunizieren möchtest, dann nutze bitte die E-Mail Adresse @info[at]kbu.freifunk.net@ dafür.
+    text: |
+      Wenn du direkt per E-Mail mit uns kommunizieren möchtest, dann nutze bitte die E-Mail Adresse @info[at]kbu.freifunk.net@ dafür.

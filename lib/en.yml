@@ -9,11 +9,34 @@ welcome_page:
   header: Home
   menu_name: Home
 
+  welcome:
+    headline: Welcome to the Freifunk-KBU network!
+    text: |
+      Our Freifunk (German for free radio) network enables regional communication. It is independent of commercial interests.
+
+      Freifunk KBU intends to unite interests in free radio around Cologne and Bonn. We are a branch of the global Freifunk "community":http://freifunk.net/.
+
+      Freifunk is more that cheap network access for everyone. Social and political aspects are also important. The Freifunk community is part of a global movement creating free and open infrastructure.
+
+      Our vision is to democratize communication channels by employing free networks. Freifunk communities around the world implement this idea by providing this infrastructure. A detailed description can be found "here":http://wiki.freifunk.net/Kategorie:English.
+
 
 participation:
   header: Participation
   menu_name: Participate
 
+  use:
+    headline:
+    text:
+
+
+  extention:
+    headline:
+    text:
+
+  community:
+    headline:
+    text:
 
 nodes:
   header: Nodes
