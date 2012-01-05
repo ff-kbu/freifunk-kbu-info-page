@@ -7,12 +7,7 @@
     #container
 
       #language
-        %ul
-          %li
-            %a{:href=> @item.identifier =~ /start_page/ ? '/de/' : normalize_identifier(@item, :de) } Deutsch
-          %li
-            %a{:href=> @item.identifier =~ /start_page/ ? '/en/' : normalize_identifier(@item, :en) } English
-
+        = render '_language'
 
       #header
         %h1= t('site.name')

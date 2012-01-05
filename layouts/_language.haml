@@ -1,0 +1,5 @@
+%ul
+  %li
+    %a{:href=> @item.identifier =~ /start_page/ ? '/de/' : normalize_identifier(@item, :de) } Deutsch
+  %li
+    %a{:href=> @item.identifier =~ /start_page/ ? '/en/' : normalize_identifier(@item, :en) } English
