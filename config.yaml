@@ -50,9 +50,10 @@ data_sources:
         availables:
           en:
             name: "English"
-            default: true
+            default: false
           de:
             name: "Deutsch"
+            default: true
         # objects should be not localized
         exclude:
           item: ['/css*', '/js*', '/img*', '/scss*', '/stylesheets*', '/sass*', '/start_page*', '/txt*', '/sitemap*']
@@ -65,3 +66,4 @@ base_url: http://info.kbu.freifunk.net
 deploy:
   default:
     dst: "root@kbu.freifunk.net:/srv/apache2/kbu.freifunk.net/subdomains/info/htdocs"
+    options: [ '-gpPrtvz', '--delete-after' ]
