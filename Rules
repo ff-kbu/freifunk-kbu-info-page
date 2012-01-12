@@ -121,5 +121,5 @@ end
 # filter based on file extension because layouts are matched based on
 # identifier and the identifier does not include the extension.  Could
 # do it based on folders but that is a little lame.
-layout 'default', :haml, {:attr_wrapper => '"', :ugly => true }
+layout 'default', :haml, {:attr_wrapper => '"', :ugly => false }
 layout '*', :haml, {:ugly => true}
