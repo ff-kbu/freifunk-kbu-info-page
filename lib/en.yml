@@ -20,7 +20,7 @@ meta:
   name: English
 
 site:
-  name: Freifunk Cologne, Bonn, and the surrounding regions
+  name: Freifunk Cologne, Bonn, and environs
 
 welcome_page:
   header: Home
@@ -44,12 +44,12 @@ participation:
 
   use:
     headline: Use Freifunk
-    text:
+    text: |
       Every wireless lan device can be part of the Freifunk network.      
 
       *Be connected!*
 
-      Some services, which will be only available from within the mesh network, are still under development. Further information can be found on our "homepage": http://kbu.freifunk.net.
+      Some services, which will be only available from within the mesh network, are still under development. Further information can be found on our "homepage":http://kbu.freifunk.net.
 
       You can use the mesh network to go online for free. Thereby regard:
         * *No guarantee* - We are not a commercial internet provider
@@ -89,7 +89,7 @@ contact:
   meetings:
     headline: Meetings
     text: |
-      There are meetings at the "Netzladen":http://netzladen.org Bonn or the "C4":http://koeln.ccc.de on a regualry basis. Actual dates can be found in our "wiki":https://kbu.freifunk.net/index.php/Treffen.
+      There are meetings at the "Netzladen":http://netzladen.org Bonn or the "C4":http://koeln.ccc.de on a regularly basis. Actual dates can be found in our "wiki":https://kbu.freifunk.net/index.php/Treffen.
 
 
   mailingliste:
