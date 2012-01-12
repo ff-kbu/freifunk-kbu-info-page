@@ -21,10 +21,13 @@ along with FreifunkKBUInfoPage. If not, see <http://www.gnu.org/licenses/>.
 
 source :rubygems
 
-gem 'nanoc3'
+gem 'nanoc'
 gem 'haml'
 gem 'sass'
-gem 'adsf'
+#gem 'adsf'
 gem 'kramdown'
 gem 'sass'
 gem "RedCloth"
+gem "compass"
+gem 'nanoc-filesystem-i18n'
+gem 'psych'
