@@ -23,15 +23,8 @@ This is the source code for the {Freifunk Köln, Bonn und Umgebung}[http://kbu.f
 
 == ToDo
 
-* Logo
-  Does not have the right size and is just pixelated
-
 * Node page
   OSM map works, but there are currently no nodes visable
-
-* Translations
-
-* Remove unused assets
 
 
 == License
