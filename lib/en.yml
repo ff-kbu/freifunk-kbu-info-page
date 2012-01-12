@@ -20,7 +20,7 @@ meta:
   name: English
 
 site:
-  name: Freifunk Cologne, Bonn and Rurality
+  name: Freifunk Cologne, Bonn, and the surrounding regions
 
 welcome_page:
   header: Home
@@ -29,9 +29,9 @@ welcome_page:
   welcome:
     headline: Welcome to the Freifunk-KBU network!
     text: |
-      Our Freifunk (German for free radio) network enables regional communication. It is independent of commercial interests.
+      Our Freifunk (German for free radio) network enables regional communication - independent of commercial interests.
 
-      Freifunk KBU intends to unite interests in free radio around Cologne and Bonn. We are a branch of the global Freifunk "community":http://freifunk.net/.
+      Freifunk KBU intends to unite interests in free radio from Cologne, Bonn, and the surrounding regions. We are a branch of the global Freifunk "community":http://freifunk.net/.
 
       Freifunk is more that cheap network access for everyone. Social and political aspects are also important. The Freifunk community is part of a global movement creating free and open infrastructure.
 
@@ -43,17 +43,30 @@ participation:
   menu_name: Participate
 
   use:
-    headline:
+    headline: Use Freifunk
     text:
+      Every wireless lan device can be part of the Freifunk network.      
 
+      *Be connected!*
+
+      Some services, which will be only available from within the mesh network, are still under development. Further information can be found on our "homepage": http://kbu.freifunk.net.
+
+      You can use the mesh network to go online for free. Thereby regard:
+        * *No guarantee* - We are not a commercial internet provider
+        * Be nice to your neighbours - Do not do anything which could harm your neighbours
+        * Protect yourself - It is technical possible to listen to radio networks
+          Be informed: "http://kbu.freifunk.net":http://kbu.freifunk.net.
 
   extention:
-    headline:
-    text:
+    headline: Extend the net
+    text: |
+      To extend the network you just need a reasonable "router":https://kbu.freifunk.net/index.php/Hardware with our custom "firmware":https://kbu.freifunk.net/index.php/Firmware. If you need any help during the set up process, we would be glad to help you.
+
 
   community:
-    headline:
-    text:
+    headline: Be part of the community
+    text: |
+      We have regular "meetings":https://kbu.freifunk.net/index.php/Treffen - just step by or write us a "mail":/de/contact/.
 
 nodes:
   header: Nodes
@@ -61,7 +74,8 @@ nodes:
 
   description:
     headline: Description
-    text: Description
+    text: |
+      The KVU Freifunk network contains a great number of active wireless lan access nodes. The actual available nodes which can be used can be found on the map below. You can use each of this nodes to communicate with other members of the Freifunk network or to access the internet. 
 
   map:
     headline: Map
@@ -74,14 +88,19 @@ contact:
 
   meetings:
     headline: Meetings
-    text:
+    text: |
+      There are meetings at the "Netzladen":http://netzladen.org Bonn or the "C4":http://koeln.ccc.de on a regualry basis. Actual dates can be found in our "wiki":https://kbu.freifunk.net/index.php/Treffen.
+
 
   mailingliste:
-    headline: Mailingliste
-    text:
+    headline: Mailing list
+    text: |
+      For project intern communication as well as the announcement of any news, we have a mailing list which you can subscribe to by writing to @freifunk-bonn[at]lists.bonn.freifunk.net@. 
+
 
   mail:
-    headline:
-    text:
+    headline: Mail
+    text: |
+      If you want to contact us directly, please write a mail at @info[at]kbu.freifunk.net@.
 
 
