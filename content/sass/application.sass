@@ -20,22 +20,22 @@ $yellow: #FFCC00;
 $black: #000000;
 $grey: #666666;
 $magenta: #dd0066;
+$white: white;
+
 $extern-border-radius: 0px;
 
-
-
 html, body {
-    background-color: white;
+    background-color: $white;
     font-family: Verdana,Geneva,sans-serif;
     color: $black;
     font-size: 16px;
-
 }
 
 #container {
     margin: 0 auto;
     width: 800px;
-    background: white;
+    background: $white;
+
     border-top-right-radius: $extern-border-radius;
     border-top-left-radius: $extern-border-radius;
     border-bottom-right-radius: $extern-border-radius;
@@ -68,9 +68,8 @@ html, body {
         text-transform: lowercase;
 
         &:hover {
-            color: $magenta;
-
-
+            color: $white;
+            background-color: $magenta
         }
     }
 }
@@ -78,13 +77,13 @@ html, body {
 #header {
     height: 50px;
 
-
     h1 {
         color: black;
         padding-left: 00px;
         margin: 0px;
 
     }
+
     #logo {
         position: relative;
         top: -40px;
@@ -96,27 +95,20 @@ html, body {
         img{
             width: 170px;
             height: 170px;
-
         }
-
-
     }
 }
 
 
 #menu {
-
     float: left;
     width: 100%;
-    background: white;
+    background: $white;
 
     width: 600px;
     margin-bottom: 10px;
 
-    main {}
-
     li {
-
 
         a {
             display: block;
@@ -133,7 +125,7 @@ html, body {
 
             &:hover {
                 background: $magenta;
-
+                color: $white;
             }
         }
     }
@@ -149,10 +141,10 @@ html, body {
 }
 
 
-#content
-{
+#content {
     clear: left;
     padding: 0px;
+
     ol {
         padding-left: 0px;
         list-style: none;
@@ -163,24 +155,35 @@ html, body {
         background-image: url(/img/logo_top_start_600.png);
         background-repeat: no-repeat;
 
-        /*width: 250px;*/
         height: 29px;
 
-        color: white;
+        color: $white;
         margin: 0px;
 
         padding-left: 10px;
     }
 
     a {
+        font-family: monospace;
         text-decoration:none;
-        color: $yellow;
-        font-weight: bold;
+        color: $black;
+        background-color: $yellow;
 
         &:hover {
-            color: $magenta;
+            color: $white;
+            background-color: $magenta;
+            font-family: monospace;
+        }
+    }
 
+    code {
+        color: $black;
+        background-color: $yellow;
 
+        &:hover {
+            color: $white;
+            background-color: $magenta;
+            font-family: monospace;
         }
     }
 }
@@ -192,9 +195,4 @@ html, body {
 
     height: 20px;
     margin-top: 10px;
-
-
 }
-
-
-
