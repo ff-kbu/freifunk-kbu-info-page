@@ -28,6 +28,7 @@
 
     #mapdiv{:style => "width:800; height:600"}
     %script{:src => "http://www.openlayers.org/api/OpenLayers.js"}
+
     :javascript
       map = new OpenLayers.Map("mapdiv", {
         controls: [
@@ -38,13 +39,29 @@
 
       map.addLayer(new OpenLayers.Layer.OSM());
 
-      var pois = new OpenLayers.Layer.Text( "Access points",
-                        { location:"http://info.kbu.freifunk.net/txt/nodes.txt",
-                          projection: map.displayProjection
-                        });
-      map.addLayer(pois);
+      var sundials = new OpenLayers.Layer.Vector("Access points", {
+          projection: map.displayProjection,
+          strategies: [new OpenLayers.Strategy.Fixed()],
+          protocol: new OpenLayers.Protocol.HTTP({
+              url: "/txt/nodes.kml", // thx to the oldenburg guys
+              format: new OpenLayers.Format.KML({
+                  extractStyles: true,
+                  extractAttributes: true
+              })
+          })
+      });
 
+      map.addLayer(sundials);
 
+      select = new OpenLayers.Control.SelectFeature(sundials);
+
+      sundials.events.on({
+        "featureselected": onFeatureSelect,
+        "featureunselected": onFeatureUnselect
+      });
+
+      map.addControl(select);
+      select.activate();
 
       //Set start centrepoint and zoom
       var lonLat = new OpenLayers.LonLat( 6.968, 50.82 )
@@ -54,3 +71,34 @@
         );
       var zoom=11;
       map.setCenter (lonLat, zoom);
+
+
+      function onPopupClose(evt) {
+          select.unselectAll();
+      }
+      function onFeatureSelect(event) {
+          var feature = event.feature;
+          // Since KML is user-generated, do naive protection against
+          // Javascript.
+          var content = "<h2>"+feature.attributes.name + "</h2>" + feature.attributes.description;
+          if (content.search("<script") != -1) {
+              content = "Content contained Javascript! Escaped content below.<br>" + content.replace(/</g, "&lt;");
+          }
+          popup = new OpenLayers.Popup.FramedCloud("chicken",
+                                   feature.geometry.getBounds().getCenterLonLat(),
+                                   new OpenLayers.Size(100,100),
+                                   content,
+                                   null, true, onPopupClose);
+          feature.popup = popup;
+          map.addPopup(popup);
+      }
+      function onFeatureUnselect(event) {
+          var feature = event.feature;
+          if(feature.popup) {
+              map.removePopup(feature.popup);
+              feature.popup.destroy();
+              delete feature.popup;
+         }
+
+      }
+

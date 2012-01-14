@@ -1,0 +1,87 @@
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Style id="sh_green-pushpin">
+<IconStyle>
+<scale>
+0.5
+</scale>
+<Icon>
+<href>
+http://www.openlayers.org/dev/img/marker.png
+</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="sh_blue-pushpin">
+<IconStyle>
+<scale>
+0.5
+</scale>
+<Icon>
+<href>
+http://www.openlayers.org/dev/img/marker.png
+</href>
+</Icon>
+</IconStyle>
+</Style>
+<ListStyle/>
+<Style id="sh_ip_online_highlighted_pushpin">
+<IconStyle>
+<scale>
+0.5
+</scale>
+<Icon>
+<href>
+http://www.openlayers.org/dev/img/marker.png
+</href>
+</Icon>
+</IconStyle>
+</Style>
+<ListStyle/>
+<Style id="sh_red-pushpin">
+<IconStyle>
+<scale>
+0.5
+</scale>
+<Icon>
+<href>
+http://www.openlayers.org/dev/img/marker.png
+</href>
+</Icon>
+</IconStyle>
+</Style>
+<ListStyle/>
+<Style id="sh_yellow-pushpin">
+<IconStyle>
+<scale>
+0.5
+</scale>
+<Icon>
+<href>
+http://www.openlayers.org/dev/img/marker.png
+</href>
+</Icon>
+</IconStyle>
+</Style>
+<ListStyle/>
+<Folder>
+<name>
+create
+</name>
+<Placemark>
+<name>
+Router von meise
+</name>
+<description>
+<![CDATA[<b>Status:</b> online<br> <b>Position:</b> <span style="color: green;">lat: 50.726118, lon: 7.080659</span><br> <b>Benutzer:</b> Meise]]>
+</description>
+<styleUrl>
+#sh_red-pushpin
+</styleUrl>
+<Point>
+<coordinates>
+7.080659,50.726118
+</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</kml>
