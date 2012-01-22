@@ -20,7 +20,7 @@ meta:
   name: English
 
 site:
-  name: Freifunk Cologne, Bonn, and environs
+  name: Freifunk in the Cologne - Bonn Region
 
 welcome_page:
   header: Home
@@ -29,13 +29,13 @@ welcome_page:
   welcome:
     headline: Welcome to the Freifunk-KBU network!
     text: |
-      Our Freifunk (German for free radio) network enables regional communication - independent of commercial interests.
+      Our Freifunk (for free radio) network enables regional communication - independent of commercial interests.
 
-      "Freifunk KBU":https://kbu.freifunk.net intends to unite interests in free radio from Cologne, Bonn, and the surrounding regions. We are a branch of the global Freifunk "community":http://freifunk.net/.
+      "Freifunk KBU":https://kbu.freifunk.net connects people interested in free radio networks from Cologne, Bonn, and the surrounding regions. We are a branch of the global Freifunk "community":http://freifunk.net/.
 
-      Freifunk is more that cheap network access for everyone. Social and political aspects are also important. The Freifunk community is part of a global movement creating free and open infrastructure.
+      Freifunk is more than cheap network access for everyone. Social and political aspects are also important. The Freifunk community is part of a global movement creating free and open infrastructure.
 
-      Our vision is to democratize communication channels by employing free networks. Freifunk communities around the world implement this idea by providing this infrastructure. A detailed description can be found "here":http://wiki.freifunk.net/Kategorie:English.
+      Our vision is to make communication channels more democratic by using free networks. Freifunk communities around the world this idea by providing the necessary infrastructure. Click "here":http://wiki.freifunk.net/Kategorie:English for a detailed description.
 
 
 participation:
@@ -75,7 +75,7 @@ nodes:
   description:
     headline: Description
     text: |
-      The KVU Freifunk network contains a great number of active wireless lan access nodes. The actual available nodes which can be used can be found on the map below. You can use each of this nodes to communicate with other members of the Freifunk network or to access the internet. 
+      The KBU Freifunk network contains a great number of active wireless lan access nodes. The actual available nodes which can be used can be found on the map below. You can use each of these nodes to communicate with other members of the Freifunk network or to access the internet.
 
   map:
     headline: Map
@@ -89,7 +89,7 @@ contact:
   meetings:
     headline: Meetings
     text: |
-      There are meetings at the "Netzladen":http://netzladen.org Bonn or the "C4":http://koeln.ccc.de on a regularly basis. Actual dates can be found in our "wiki":https://kbu.freifunk.net/index.php/Treffen.
+      There are meetings at the "Netzladen":http://netzladen.org Bonn or the "C4":http://koeln.ccc.de on a regularl basis. Upcoming dates can be found in our "wiki":https://kbu.freifunk.net/index.php/Treffen.
 
 
   mailingliste:
@@ -101,6 +101,4 @@ contact:
   mail:
     headline: Mail
     text: |
-      If you want to contact us directly, please write a mail at @info[at]kbu.freifunk.net@.
-
-
+      If you want to contact us directly, please write a mail to @info[at]kbu.freifunk.net@.
