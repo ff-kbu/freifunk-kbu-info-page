@@ -1,6 +1,4 @@
-output/txt
-output/sitemap.xml
-
+output
 tmp/*
 .idea
 *.gem
