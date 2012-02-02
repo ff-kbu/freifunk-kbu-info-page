@@ -26,7 +26,7 @@
   %li
     %h3.map= t('nodes.map.headline')
 
-    #mapdiv{:style => "width:800; height:600"}
+    #mapdiv
     %script{:src => "http://www.openlayers.org/api/OpenLayers.js"}
 
     :javascript
@@ -43,7 +43,7 @@
           projection: map.displayProjection,
           strategies: [new OpenLayers.Strategy.Fixed()],
           protocol: new OpenLayers.Protocol.HTTP({
-              url: "/txt/nodes.kml", // thx to the oldenburg guys
+              url: "/txt/nodes.kml", // thx to the oldenburg guys TODO: should be cleaned and filled with own sections
               format: new OpenLayers.Format.KML({
                   extractStyles: true,
                   extractAttributes: true
@@ -101,4 +101,3 @@
          }
 
       }
-
