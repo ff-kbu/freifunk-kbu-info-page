@@ -1,4 +1,6 @@
-output/*
+output/txt
+output/sitemap.xml
+
 tmp/*
 .idea
 *.gem
