@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <title>Freifunk Köln, Bonn und Umgebung</title>
+    <link href='../../img/favicon.ico' rel='shortcut icon' />
+    <link href='../../css/application.css' media='screen' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id="container">
+      <div id="language">
+        <ul>
+        <li>
+        <a href='./'>Deutsch</a>
+        </li>
+        <li>
+        <a href='../../en/nodes/'>English</a>
+        </li>
+        </ul>
+      </div>
+      <div id="header">
+        <h1>Freifunk Köln, Bonn und Umgebung</h1>
+        <div id="logo">
+          <img alt="Freifunk Köln, Bonn und Umgebung" src="../../img/kbu_logo.png" />
+        </div>
+      </div>
+      <div id="menu">
+        <ul class='main'>
+        <li>
+        <a href='../'>Startseite</a>
+        </li>
+        <li>
+        <a href='../participation/'>Mitmachen</a>
+        </li>
+        <li>
+        <a href='../contact/'>Kontakt</a>
+        </li>
+        </ul>
+      </div>
+      <div id="content">
+        <h2>Knoten</h2>
+        <ol>
+        <li>
+        <h3>Beschreibung</h3>
+        <div class='description'>
+        <p>Das <span class="caps">KBU</span>-Freifunknetz verfügt über eine Vielzahl aktiver Wlan Knoten. Die auf der unten stehenden Karte angzeigt werden, sind verfügbar und können genutzt werden. An allen Zugangsknoten kannst du innerhalb des Freifunknetzes mit anderen Teilnehmern kommunizieren, aber auch der Zugang in das Internet ist an allen Zugangsknoten möglich.</p>
+        </div>
+        </li>
+        <li>
+        <h3 class='map'>Übersichtskarte</h3>
+        <div id='mapdiv' style='width:800; height:600'></div>
+        <script src='http://www.openlayers.org/api/OpenLayers.js'></script>
+        <script type='text/javascript'>
+          //<![CDATA[
+            map = new OpenLayers.Map("mapdiv", {
+              controls: [
+                new OpenLayers.Control.MouseDefaults(),
+                new OpenLayers.Control.LayerSwitcher(),
+                new OpenLayers.Control.PanZoomBar()],
+            });
+            
+            map.addLayer(new OpenLayers.Layer.OSM());
+            
+            var pois = new OpenLayers.Layer.Text( "Access points",
+                              { location:"http://info.kbu.freifunk.net/txt/nodes.txt",
+                                projection: map.displayProjection
+                              });
+            map.addLayer(pois);
+            
+            
+            
+            //Set start centrepoint and zoom
+            var lonLat = new OpenLayers.LonLat( 6.968, 50.82 )
+            .transform(
+              new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+              );
+            var zoom=11;
+            map.setCenter (lonLat, zoom);
+          //]]>
+        </script>
+        </li>
+        </ol>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

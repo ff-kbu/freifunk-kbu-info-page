@@ -21,6 +21,14 @@ This is the source code for the {Freifunk Köln, Bonn und Umgebung}[http://kbu.f
      nanoc compile
 
 
+== Environment
+
+Tested and working on:
+* Debian GNU/Linux 6.0 amd64
+  * Ruby 1.9.2
+  * Ruby 1.9.3
+  
+
 == ToDo
 
 * Node page
