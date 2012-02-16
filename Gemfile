@@ -22,12 +22,15 @@ along with FreifunkKBUInfoPage. If not, see <http://www.gnu.org/licenses/>.
 source :rubygems
 
 gem 'nanoc'
-gem 'haml'
-gem 'sass'
-#gem 'adsf'
-gem 'kramdown'
-gem 'sass'
-gem "RedCloth"
-gem "compass"
 gem 'nanoc-filesystem-i18n'
 gem 'psych'
+
+gem 'haml'
+gem 'sass'
+gem "compass"
+
+gem 'kramdown'
+gem "RedCloth"
+gem 'mime-types'
+gem 'builder'
+gem 'rack'
