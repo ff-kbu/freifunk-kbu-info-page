@@ -97,8 +97,12 @@ contact:
     text: |
       For project intern communication as well as the announcement of any news, we have a mailing list which you can subscribe to by writing to @freifunk-bonn[at]lists.bonn.freifunk.net@. 
 
-
   mail:
     headline: Mail
     text: |
       If you want to contact us directly, please write a mail to @info[at]kbu.freifunk.net@.
+
+  twitter:
+    headline: Twitter
+    text: |
+      Follow us on twitter: "@freifunkkbu":https://twitter.com/freifunkkbu.

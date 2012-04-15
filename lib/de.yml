@@ -101,3 +101,8 @@ contact:
     headline: E-Mail
     text: |
       Wenn du direkt per E-Mail mit uns kommunizieren möchtest, dann nutze bitte die E-Mail Adresse @info[at]kbu.freifunk.net@ dafür.
+
+  twitter:
+    headline: Twitter
+    text: |
+      Folge uns auf Twitter: "@freifunkkbu":https://twitter.com/freifunkkbu.
