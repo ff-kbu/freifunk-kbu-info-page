@@ -1,4 +1,4 @@
-= Freifunk KBU Info Page
+= Freifunk KBU Info Page [Deprecated]
 
 This is the source code for the {Freifunk Köln, Bonn und Umgebung}[http://kbu.freifunk.net] information {page}[http://info.kbu.freifunk.net]. The page contains basic information to our Freifunk project and is stored on access points. It based on the static web site generator {nanoc}[http://nanoc.stoneship.org/].
 
